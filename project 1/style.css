@@ -31,7 +31,7 @@ h2 {
     margin:0 0 20px;
 }
 .form {
-    padding: 30px 40px;
+    padding: 30px 40px
 }
 
 .form-control {
@@ -64,7 +64,7 @@ h2 {
     border-color: var(--success-colour);
 }
 
- .form-control.error input {
+.form-control.error input {
         border-color: var(--error-color);
 }
 .form-control small {
