@@ -2,7 +2,7 @@
 
 :root {
     --success-colour: green;
-    --error-color: orangered;
+    --error-color: red;
 }
 
 * {
@@ -11,12 +11,12 @@
 
 body{
     background-color: rgb(238, 235, 230);
-  font-family: "Open Sans", sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 .container {
@@ -28,7 +28,7 @@ body{
 
 h2 {
     text-align: center;
-    margin:0 0 20px;
+    margin: 0 0 20px;
 }
 .form {
     padding: 30px 40px

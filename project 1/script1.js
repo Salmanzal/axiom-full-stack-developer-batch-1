@@ -1,4 +1,4 @@
-
+// retrieving HTML element from the DOM
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
@@ -28,22 +28,44 @@ function isValidEmail(email){
 function showsuccess(input) {
     const formControl=input.parentElement;
      // replace the class-add success
-     formControl.className = 'form-control success'
+     formControl.className = 'form-control success';
 }
 
-//function to check if required field have data
-function checkRequired(inputarray) {
-    inputarray.foreach(function(input)  {
-        
-    });
-}
-
+// event listener
 // create event listener for submit button 
 form.addEventListener('submit', function(e) {
     // stop page on reloading to submit
     e.prventdefault();
 
-    checkRequired([username,email,password,password2]);
+    //Check to see if field meet required field required
+    // check if username input is empty
+    if (username.value=== '') {
+        showerror (username,'username is required');
+    } else {
+        showsuccess(username);
+    }
+    // check if email input is empty
+    if (email.value=== '') {
+        showerror (eamil,'email is required');
+    }else if is (!isValidEmail( email.value)) {
+        showError(email,'Email is invalid')
+    }
 
+    else {
+        showsuccess(eamil);
+    }
 
+    // check if password input is empty
+    if (password.value=== '') {
+        showerror (password,'password is required');
+    } else {
+        showsuccess(password);
+    }
+
+    // check if password input is empty
+    if (password2.value=== '') {
+        showerror (password2,'confirm password is required');
+    } else {
+        showsuccess(password2);
+    }
 })
